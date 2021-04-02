@@ -8,6 +8,13 @@ This microservice returns a Timestamp in JSON format. It could be used in two wa
 * a request to `/api/timestamp/` return the current time.
 * a request to `/api/timestamp/:date?` return a timestamp based on the parameter. It accepts both valid date string and unix timestamp.
 
+**Example Usage:**
+`[project url]/api/timestamp/2015-12-25`
+`[project url]/api/timestamp/1451001600000`
+
+**Example Output:**
+`{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}`
+
 ### Getting Started
 
 [Express](https://expressjs.com/) is used as the Node.js web application framework in this project. See [hello-world example](https://expressjs.com/en/starter/hello-world.html).
